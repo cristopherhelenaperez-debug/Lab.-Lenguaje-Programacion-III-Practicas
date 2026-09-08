@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    background: url(img2.jpg)  center/ cover no-repeat fixed #0008;
+}
+.flex{
+    display: flex;
+    margin: 0;
+    margin-top: 10px;
+    flex-flow: column;
+    justify-content: space-around;
+    height: auto;
+    
+}
+h1{
+    background-color: #000;
+    color: #fff;
+    margin: 20px 0;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 40px #fff2;
+}
+h2{
+    margin: 10px 0 0 0;
+}
+p{
+    margin: 0;
+    font-size: 18px;
+}
+.Hora_container{
+    display: grid;
+    grid-template: auto auto auto auto/ 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #0af3;
+    border: 1px solid #0afb;
+    margin: auto;
+    width: 95%;
+}
+
+.Hora_item{
+    background-color: #4afd;
+    color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 2px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.NoRoom{
+    background-color: #19dd;
+    margin: 10px 5px;
+}

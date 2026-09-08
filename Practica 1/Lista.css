@@ -1,0 +1,37 @@
+
+body{
+    margin: 0;
+    background: url(img2.jpg)  center/ cover no-repeat fixed #0008;
+}
+h1{
+    background-color: #0009;
+    color: #fff;
+    margin: 20px 0;
+    margin-top: 0;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    padding: 20px 0;
+    box-shadow: 0 4px 40px #fff2;
+}
+.List_container{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    background-color: #0af6;
+    width: 90%;
+    border: 1px solid #4af9;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+
+.List_item{
+    background-color: #4afe;
+    color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 2px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
