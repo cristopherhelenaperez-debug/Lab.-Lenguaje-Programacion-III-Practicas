@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>102 Etiquetas HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #1267df66;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listado de 102 Etiquetas HTML</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Nombre de la Etiqueta</th>
+                <th>Descripción</th>
+                <th>Ejemplo de Uso</th>
+                <th>Elemento Adicional</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>&lt;    a&gt;</td>
+                <td>Define un hipervínculo.</td>
+                <td><code>&lt;a href="https://www.example.com"&gt;Visita Ejemplo&lt;/a&gt;</code></td>
+                <td>Atributo <code>target="_blank"</code> abre en otra pestaña.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>&lt;p&gt;</td>
+                <td>Define un párrafo de texto.</td>
+                <td><code>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</code></td>
+                <td>Puede contener elementos en línea como <code>&lt;strong&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>&lt;img&gt;</td>
+                <td>Incrusta una imagen en la página.</td>
+                <td><code>&lt;img src="imagen.jpg" alt="Descripción"&gt;</code></td>
+                <td>El atributo <code>alt</code> es importante para accesibilidad.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>&lt;div&gt;</td>
+                <td>Define una sección o contenedor en el documento.</td>
+                <td><code>&lt;div&gt;Contenido dentro del div&lt;/div&gt;</code></td>
+                <td>Se usa para agrupar elementos y aplicar estilos.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>&lt;h1&gt;</td>
+                <td>Encabezado más importante en la página.</td>
+                <td><code>&lt;h1&gt;Título principal&lt;/h1&gt;</code></td>
+                <td>Existen niveles de encabezado desde &lt;h1&gt; hasta &lt;h6&gt;.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>&lt;h2&gt;</td>
+                <td>Encabezado de segundo nivel.</td>
+                <td><code>&lt;h2&gt;Subtítulo&lt;/h2&gt;</code></td>
+                <td>Organiza jerárquicamente el contenido.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>&lt;ul&gt;</td>
+                <td>Lista desordenada.</td>
+                <td><code>&lt;ul&gt;&lt;li&gt;Elemento&lt;/li&gt;&lt;/ul&gt;</code></td>
+                <td>Los elementos se muestran con viñetas.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>&lt;ol&gt;</td>
+                <td>Lista ordenada.</td>
+                <td><code>&lt;ol&gt;&lt;li&gt;Elemento&lt;/li&gt;&lt;/ol&gt;</code></td>
+                <td>Los elementos se enumeran automáticamente.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>&lt;li&gt;</td>
+                <td>Elemento de una lista.</td>
+                <td><code>&lt;li&gt;Elemento de lista&lt;/li&gt;</code></td>
+                <td>Se usa dentro de &lt;ul&gt; o &lt;ol&gt;.</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>&lt;span&gt;</td>
+                <td>Contenedor en línea para aplicar estilos.</td>
+                <td><code>&lt;span style="color:red"&gt;Texto rojo&lt;/span&gt;</code></td>
+                <td>Permite dar formato a fragmentos de texto.</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>&lt;br&gt;</td>
+                <td>Salto de línea.</td>
+                <td><code>Texto antes&lt;br&gt;Texto después</code></td>
+                <td>No necesita etiqueta de cierre.</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>&lt;hr&gt;</td>
+                <td>Inserta una línea horizontal.</td>
+                <td><code>&lt;hr&gt;</code></td>
+                <td>Se usa para separar secciones.</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>&lt;strong&gt;</td>
+                <td>Texto en negrita con énfasis semántico.</td>
+                <td><code>&lt;strong&gt;Importante&lt;/strong&gt;</code></td>
+                <td>Indica relevancia en el contenido.</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>&lt;em&gt;</td>
+                <td>Texto en cursiva con énfasis.</td>
+                <td><code>&lt;em&gt;Palabra destacada&lt;/em&gt;</code></td>
+                <td>Se usa para resaltar significado.</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>&lt;table&gt;</td>
+                <td>Define una tabla.</td>
+                <td><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Dato&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></td>
+                <td>Contiene filas y columnas.</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>&lt;tr&gt;</td>
+                <td>Define una fila en una tabla.</td>
+                <td><code>&lt;tr&gt;&lt;td&gt;Dato&lt;/td&gt;&lt;/tr&gt;</code></td>
+                <td>Se usa dentro de &lt;table&gt;.</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>&lt;td&gt;</td>
+                <td>Define una celda de datos en una tabla.</td>
+                <td><code>&lt;td&gt;Contenido&lt;/td&gt;</code></td>
+                <td>Debe estar dentro de una fila (&lt;tr&gt;).</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>&lt;th&gt;</td>
+                <td>Celda de encabezado en una tabla.</td>
+                <td><code>&lt;th&gt;Título&lt;/th&gt;</code></td>
+                <td>Se muestra en negrita por defecto.</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>&lt;form&gt;</td>
+                <td>Define un formulario para entrada de datos.</td>
+                <td><code>&lt;form action="procesar.php"&gt;...&lt;/form&gt;</code></td>
+                <td>Puede contener inputs, botones, select, etc.</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>&lt;input&gt;</td>
+                <td>Campo de entrada de datos.</td>
+                <td><code>&lt;input type="text" name="usuario"&gt;</code></td>
+                <td>Tipos: text, password, email, etc.</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>&lt;button&gt;</td>
+                <td>Botón interactivo.</td>
+                <td><code>&lt;button&gt;Enviar&lt;/button&gt;</code></td>
+                <td>Puede ser de tipo submit, reset o button.</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>&lt;label&gt;</td>
+                <td>Etiqueta para un campo de formulario.</td>
+                <td><code>&lt;label for="usuario"&gt;Nombre:&lt;/label&gt;</code></td>
+                <td>Se asocia con inputs mediante el atributo for.</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>&lt;select&gt;</td>
+                <td>Menú desplegable.</td>
+                <td><code>&lt;select&gt;&lt;option&gt;Opción&lt;/option&gt;&lt;/select&gt;</code></td>
+                <td>Contiene opciones (&lt;option&gt;).</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>&lt;option&gt;</td>
+                <td>Elemento dentro de un menú desplegable.</td>
+                <td><code>&lt;option value="1"&gt;Primera&lt;/option&gt;</code></td>
+                <td>Se usa dentro de &lt;select&gt;.</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>&lt;textarea&gt;</td>
+                <td>Área de texto multilínea.</td>
+                <td><code>&lt;textarea rows="4" cols="50"&gt;&lt;/textarea&gt;</code></td>
+                <td>Permite escribir párrafos largos.</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>&lt;header&gt;</td>
+                <td>Sección de encabezado de la página.</td>
+                <td><code>&lt;header&gt;Encabezado principal&lt;/header&gt;</code></td>
+                <td>Usado en HTML5 para estructurar.</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>&lt;footer&gt;</td>
+                <td>Sección de pie de página.</td>
+                <td><code>&lt;footer&gt;Derechos reservados&lt;/footer&gt;</code></td>
+                <td>Usado en HTML5 para información final.</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>&lt;nav&gt;</td>
+                <td>Sección de navegación.</td>
+                <td><code>&lt;nav&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/nav&gt;</code></td>
+                <td>Contiene menús y enlaces.</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>&lt;main&gt;</td>
+                <td>Contenido principal del documento.</td>
+                <td><code>&lt;main&gt;Contenido central&lt;/main&gt;</code></td>
+                <td>Debe ser único en la página.</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>&lt;section&gt;</td>
+                <td>Sección temática del documento.</td>
+                <td><code>&lt;section&gt;Tema específico&lt;/section&gt;</code></td>
+                <td>Organiza el contenido en bloques.</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>&lt;article&gt;</td>
+                <td>Sección independiente de contenido.</td>
+                <td><code>&lt;article&gt;Noticia completa&lt;/article&gt;</code></td>
+                <td>Usado para blogs, noticias o publicaciones.</td>
+            </tr>
+            <!-- Ejemplo 32 -->
+            <tr>
+                <td>32</td>
+                <td>&lt;aside&gt;</td>
+                <td>Contenido secundario o complementario.</td>
+                <td><code>&lt;aside&gt;Publicidad&lt;/aside&gt;</code></td>
+                <td>Se usa para barras laterales.</td>
+            </tr>
+            <!-- Ejemplo 33 -->
+            <tr>
+                <td>33</td>
+                <td>&lt;figure&gt;</td>
+                <td>Contenedor para imágenes, gráficos o ilustraciones.</td>
+                <td><code>&lt;figure&gt;&lt;img src="foto.jpg"&gt;&lt;/figure&gt;</code></td>
+                <td>Puede incluir &lt;figcaption&gt;.</td>
+            </tr>
+            <!-- Ejemplo 34 -->
+            <tr>
+                <td>34</td>
+                <td>&lt;figcaption&gt;</td>
+                <td>Texto descriptivo de una figura.</td>
+                <td><code>&lt;figcaption&gt;Descripción de la imagen&lt;/figcaption&gt;</code></td>
+                <td>Se coloca dentro de &lt;figure&gt;.</td>
+            </tr>
+            <!-- Ejemplo 35 -->
+            <tr>
+                <td>35</td>
+                <td>&lt;audio&gt;</td>
+                <td>Incrusta contenido de audio.</td>
+                <td><code>&lt;audio controls&gt;&lt;source src="cancion.mp3"&gt;&lt;/audio&gt;</code></td>
+                <td>Puede tener controles de reproducción.</td>
+            </tr>
+            <!-- Ejemplo 36 -->
+            <tr>
+                <td>36</td>
+                <td>&lt;video&gt;</td>
+                <td>Incrusta contenido de video.</td>
+                <td><code>&lt;video controls&gt;&lt;source src="video.mp4"&gt;&lt;/video&gt;</code></td>
+                <td>Permite reproducir archivos multimedia.</td>
+            </tr>
+            <!-- Ejemplo 37 -->
+            <tr>
+                <td>37</td>
+                <td>&lt;source&gt;</td>
+                <td>Define recursos multimedia alternativos.</td>
+                <td><code>&lt;source src="video.mp4" type="video/mp4"&gt;</code></td>
+                <td>Se usa dentro de &lt;audio&gt; o &lt;video&gt;.</td>
+            </tr>
+            <!-- Ejemplo 38 -->
+            <tr>
+                <td>38</td>
+                <td>&lt;canvas&gt;</td>
+                <td>Área para gráficos dinámicos.</td>
+                <td><code>&lt;canvas id="miCanvas"&gt;&lt;/canvas&gt;</code></td>
+                <td>Se manipula con JavaScript.</td>
+            </tr>
+            <!-- Ejemplo 39 -->
+            <tr>
+                <td>39</td>
+                <td>&lt;svg&gt;</td>
+                <td>Define gráficos vectoriales escalables.</td>
+                <td><code>&lt;svg width="100" height="100"&gt;&lt;circle cx="50" cy="50" r="40"/&gt;&lt;/svg&gt;</code></td>
+                <td>Permite dibujar formas y figuras.</td>
+            </tr>
+            <!-- Ejemplo 40 -->
+            <tr>
+                <td>40</td>
+                <td>&lt;iframe&gt;</td>
+                <td>Incrusta otra página dentro del documento.</td>
+                <td><code>&lt;iframe src="https://www.example.com"&gt;&lt;/iframe&gt;</code></td>
+                <td>Se usa para mostrar contenido externo.</td>
+            </tr>
+            <!-- Ejemplo 41 -->
+            <tr>
+                <td>41</td>
+                <td>&lt;meta&gt;</td>
+                <td>Define metadatos del documento.</td>
+                <td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+                <td>Se coloca dentro de &lt;head&gt;.</td>
+            </tr>
+            <!-- Ejemplo 42 -->
+            <tr>
+                <td>42</td>
+                <td>&lt;link&gt;</td>
+                <td>Enlaza recursos externos.</td>
+                <td><code>&lt;link rel="stylesheet" href="estilos.css"&gt;</code></td>
+                <td>Se usa para hojas de estilo CSS.</td>
+            </tr>
+            <!-- Ejemplo 43 -->
+            <tr>
+                <td>43</td>
+                <td>&lt;style&gt;</td>
+                <td>Define estilos CSS internos.</td>
+                <td><code>&lt;style&gt;body {color:blue;}&lt;/style&gt;</code></td>
+                <td>Se coloca dentro de &lt;head&gt;.</td>
+            </tr>
+            <!-- Ejemplo 44 -->
+            <tr>
+                <td>44</td>
+                <td>&lt;script&gt;</td>
+                <td>Define código JavaScript.</td>
+                <td><code>&lt;script&gt;alert("Hola");&lt;/script&gt;</code></td>
+                <td>Puede estar en &lt;head&gt; o &lt;body&gt;.</td>
+            </tr>
+            <!-- Ejemplo 45 -->
+            <tr>
+                <td>45</td>
+                <td>&lt;title&gt;</td>
+                <td>Define el título de la página.</td>
+                <td><code>&lt;title&gt;Mi Página Web&lt;/title&gt;</code></td>
+                <td>Se muestra en la pestaña del navegador.</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>&lt;body&gt;</td>
+                <td>Contiene el contenido visible de la página.</td>
+                <td><code>&lt;body&gt;Texto y elementos&lt;/body&gt;</code></td>
+                <td>Debe existir solo una vez en el documento.</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>&lt;head&gt;</td>
+                <td>Contiene metadatos y enlaces a recursos.</td>
+                <td><code>&lt;head&gt;&lt;title&gt;Título&lt;/title&gt;&lt;/head&gt;</code></td>
+                <td>No se muestra en la página.</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>&lt;html&gt;</td>
+                <td>Elemento raíz de un documento HTML.</td>
+                <td><code>&lt;html lang="es"&gt;...&lt;/html&gt;</code></td>
+                <td>Debe envolver todo el contenido.</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>&lt;small&gt;</td>
+                <td>Texto en tamaño reducido.</td>
+                <td><code>&lt;small&gt;Nota&lt;/small&gt;</code></td>
+                <td>Se usa para aclaraciones o comentarios.</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>&lt;mark&gt;</td>
+                <td>Resalta texto.</td>
+                <td><code>&lt;mark&gt;Texto resaltado&lt;/mark&gt;</code></td>
+                <td>Se muestra con fondo amarillo por defecto.</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>&lt;del&gt;</td>
+                <td>Texto eliminado.</td>
+                <td><code>&lt;del&gt;Texto borrado&lt;/del&gt;</code></td>
+                <td>Se muestra tachado.</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>&lt;ins&gt;</td>
+                <td>Texto insertado.</td>
+                <td><code>&lt;ins&gt;Texto añadido&lt;/ins&gt;</code></td>
+                <td>Se muestra subrayado.</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>&lt;sup&gt;</td>
+                <td>Texto en superíndice.</td>
+                <td><code>2&lt;sup&gt;3&lt;/sup&gt;</code></td>
+                <td>Se usa en fórmulas matemáticas.</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>&lt;sub&gt;</td>
+                <td>Texto en subíndice.</td>
+                <td><code>H&lt;sub&gt;2&lt;/sub&gt;O</code></td>
+                <td>Se usa en fórmulas químicas.</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>&lt;code&gt;</td>
+                <td>Representa fragmentos de código.</td>
+                <td><code>&lt;code&gt;console.log("Hola")&lt;/code&gt;</code></td>
+                <td>Se muestra con tipografía monoespaciada.</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>&lt;pre&gt;</td>
+                <td>Texto preformateado.</td>
+                <td><code>&lt;pre&gt;Texto con espacios&lt;/pre&gt;</code></td>
+                <td>Respeta saltos de línea y espacios.</td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>&lt;blockquote&gt;</td>
+                <td>Cita en bloque.</td>
+                <td><code>&lt;blockquote&gt;Texto citado&lt;/blockquote&gt;</code></td>
+                <td>Se muestra con sangría.</td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>&lt;q&gt;</td>
+                <td>Cita en línea.</td>
+                <td><code>&lt;q&gt;Texto citado&lt;/q&gt;</code></td>
+                <td>Se muestra entre comillas.</td>
+            </tr>
+            <tr>
+                <td>59</td>
+                <td>&lt;abbr&gt;</td>
+                <td>Abreviatura o acrónimo.</td>
+                <td><code>&lt;abbr title="Organización de las Naciones Unidas"&gt;ONU&lt;/abbr&gt;</code></td>
+                <td>El atributo title muestra el significado.</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>&lt;address&gt;</td>
+                <td>Información de contacto.</td>
+                <td><code>&lt;address&gt;Correo: ejemplo@mail.com&lt;/address&gt;</code></td>
+                <td>Se muestra en cursiva por defecto.</td>
+            </tr>
+            <tr>
+                <td>61</td>
+                <td>&lt;time&gt;</td>
+                <td>Representa una fecha u hora.</td>
+                <td><code>&lt;time datetime="2026-09-08"&gt;8 de septiembre 2026&lt;/time&gt;</code></td>
+                <td>El atributo datetime facilita la interpretación por máquinas.</td>
+            </tr>
+            <tr>
+                <td>62</td>
+                <td>&lt;progress&gt;</td>
+                <td>Barra de progreso.</td>
+                <td><code>&lt;progress value="50" max="100"&gt;&lt;/progress&gt;</code></td>
+                <td>Indica el avance de una tarea.</td>
+            </tr>
+            <tr>
+                <td>63</td>
+                <td>&lt;meter&gt;</td>
+                <td>Representa una medida escalar.</td>
+                <td><code>&lt;meter value="0.6"&gt;60%&lt;/meter&gt;</code></td>
+                <td>Se usa para mostrar valores dentro de un rango.</td>
+            </tr>
+            <tr>
+                <td>64</td>
+                <td>&lt;details&gt;</td>
+                <td>Sección desplegable.</td>
+                <td><code>&lt;details&gt;&lt;summary&gt;Más info&lt;/summary&gt;Texto oculto&lt;/details&gt;</code></td>
+                <td>Permite mostrar/ocultar contenido.</td>
+            </tr>
+            <tr>
+                <td>65</td>
+                <td>&lt;summary&gt;</td>
+                <td>Título visible de &lt;details&gt;.</td>
+                <td><code>&lt;summary&gt;Haz clic aquí&lt;/summary&gt;</code></td>
+                <td>Activa el despliegue del contenido.</td>
+            </tr>
+            <tr>
+                <td>66</td>
+                <td>&lt;datalist&gt;</td>
+                <td>Lista de opciones para un input.</td>
+                <td><code>&lt;input list="opciones"&gt;&lt;datalist id="opciones"&gt;&lt;option value="HTML"&gt;&lt;/datalist&gt;</code></td>
+                <td>Se vincula con inputs mediante el atributo list.</td>
+            </tr>
+            <tr>
+                <td>67</td>
+                <td>&lt;fieldset&gt;</td>
+                <td>Agrupa elementos de formulario.</td>
+                <td><code>&lt;fieldset&gt;&lt;legend&gt;Datos&lt;/legend&gt;&lt;input&gt;&lt;/fieldset&gt;</code></td>
+                <td>Se usa para organizar inputs relacionados.</td>
+            </tr>
+            <tr>
+                <td>68</td>
+                <td>&lt;legend&gt;</td>
+                <td>Título de un grupo de formulario.</td>
+                <td><code>&lt;legend&gt;Información personal&lt;/legend&gt;</code></td>
+                <td>Se coloca dentro de &lt;fieldset&gt;.</td>
+            </tr>
+            <tr>
+                <td>69</td>
+                <td>&lt;optgroup&gt;</td>
+                <td>Agrupa opciones en un menú.</td>
+                <td><code>&lt;select&gt;&lt;optgroup label="Frutas"&gt;&lt;option&gt;Manzana&lt;/option&gt;&lt;/optgroup&gt;&lt;/select&gt;</code></td>
+                <td>Organiza opciones dentro de &lt;select&gt;.</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>&lt;output&gt;</td>
+                <td>Muestra resultados de cálculos.</td>
+                <td><code>&lt;output&gt;Resultado&lt;/output&gt;</code></td>
+                <td>Se usa junto con formularios y scripts.</td>
+            </tr>
+            <tr>
+                <td>71</td>
+                <td>&lt;canvas&gt;</td>
+                <td>Área para gráficos dinámicos.</td>
+                <td><code>&lt;canvas id="grafico"&gt;&lt;/canvas&gt;</code></td>
+                <td>Se manipula con JavaScript.</td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <td>&lt;map&gt;</td>
+                <td>Define un mapa de imagen.</td>
+                <td><code>&lt;map name="mapa"&gt;&lt;area shape="rect" coords="34,44,270,350" href="link.html"&gt;&lt;/map&gt;</code></td>
+                <td>Se usa junto con &lt;img usemap&gt;.</td>
+            </tr>
+            <tr>
+                <td>73</td>
+                <td>&lt;area&gt;</td>
+                <td>Zona interactiva en un mapa de imagen.</td>
+                <td><code>&lt;area shape="circle" coords="75,75,50" href="pagina.html"&gt;</code></td>
+                <td>Define regiones clicables.</td>
+            </tr>
+            <tr>
+                <td>74</td>
+                <td>&lt;track&gt;</td>
+                <td>Subtítulos o descripciones para video/audio.</td>
+                <td><code>&lt;track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español"&gt;</code></td>
+                <td>Se usa dentro de &lt;video&gt; o &lt;audio&gt;.</td>
+            </tr>
+            <tr>
+                <td>75</td>
+                <td>&lt;noscript&gt;</td>
+                <td>Contenido alternativo si JS está deshabilitado.</td>
+                <td><code>&lt;noscript&gt;Activa JavaScript para ver esta página&lt;/noscript&gt;</code></td>
+                <td>Se muestra cuando el navegador no soporta scripts.</td>
+            </tr>
+            <tr>
+                <td>76</td>
+                <td>&lt;object&gt;</td>
+                <td>Incrusta recursos externos.</td>
+                <td><code>&lt;object data="archivo.pdf" type="application/pdf"&gt;&lt;/object&gt;</code></td>
+                <td>Puede mostrar documentos, multimedia o apps.</td>
+            </tr>
+            <tr>
+                <td>77</td>
+                <td>&lt;param&gt;</td>
+                <td>Define parámetros para &lt;object&gt;.</td>
+                <td><code>&lt;param name="autoplay" value="true"&gt;</code></td>
+                <td>Se usa dentro de &lt;object&gt;.</td>
+            </tr>
+            <tr>
+                <td>78</td>
+                <td>&lt;base&gt;</td>
+                <td>Define la URL base para enlaces.</td>
+                <td><code>&lt;base href="https://www.example.com/" target="_blank"&gt;</code></td>
+                <td>Se coloca dentro de &lt;head&gt;.</td>
+            </tr>
+            <tr>
+                <td>79</td>
+                <td>&lt;b&gt;</td>
+                <td>Texto en negrita.</td>
+                <td><code>&lt;b&gt;Texto resaltado&lt;/b&gt;</code></td>
+                <td>No tiene valor semántico, solo visual.</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>&lt;i&gt;</td>
+                <td>Texto en cursiva.</td>
+                <td><code>&lt;i&gt;Texto en cursiva&lt;/i&gt;</code></td>
+                <td>Se usa para estilo visual.</td>
+            </tr>
+            <tr>
+                <td>81</td>
+                <td>&lt;u&gt;</td>
+                <td>Texto subrayado.</td>
+                <td><code>&lt;u&gt;Texto subrayado&lt;/u&gt;</code></td>
+                <td>Se usa para resaltar visualmente.</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td>&lt;s&gt;</td>
+                <td>Texto tachado.</td>
+                <td><code>&lt;s&gt;Texto incorrecto&lt;/s&gt;</code></td>
+                <td>Indica contenido obsoleto.</td>
+            </tr>
+            <tr>
+                <td>83</td>
+                <td>&lt;var&gt;</td>
+                <td>Representa una variable.</td>
+                <td><code>&lt;var&gt;x&lt;/var&gt; = 10</code></td>
+                <td>Se muestra en cursiva por defecto.</td>
+            </tr>
+            <tr>
+                <td>84</td>
+                <td>&lt;kbd&gt;</td>
+                <td>Representa entrada de teclado.</td>
+                <td><code>&lt;kbd&gt;Ctrl + C&lt;/kbd&gt;</code></td>
+                <td>Se muestra en tipografía monoespaciada.</td>
+            </tr>
+            <tr>
+                <td>85</td>
+                <td>&lt;samp&gt;</td>
+                <td>Representa salida de un programa.</td>
+                <td><code>&lt;samp&gt;Error 404&lt;/samp&gt;</code></td>
+                <td>Se muestra en tipografía monoespaciada.</td>
+            </tr>
+            <tr>
+                <td>86</td>
+                <td>&lt;cite&gt;</td>
+                <td>Referencia a una obra.</td>
+                <td><code>&lt;cite&gt;El Quijote&lt;/cite&gt;</code></td>
+                <td>Se muestra en cursiva.</td>
+            </tr>
+            <tr>
+                <td>87</td>
+                <td>&lt;dfn&gt;</td>
+                <td>Define un término.</td>
+                <td><code>&lt;dfn&gt;HTML&lt;/dfn&gt;</code></td>
+                <td>Se usa para marcar definiciones.</td>
+            </tr>
+            <tr>
+                <td>88</td>
+                <td>&lt;bdo&gt;</td>
+                <td>Dirección del texto.</td>
+                <td><code>&lt;bdo dir="rtl"&gt;Texto&lt;/bdo&gt;</code></td>
+                <td>Cambia la dirección de escritura.</td>
+            </tr>
+            <tr>
+                <td>89</td>
+                <td>&lt;br&gt;</td>
+                <td>Salto de línea.</td>
+                <td><code>Texto&lt;br&gt;Nueva línea</code></td>
+                <td>No requiere cierre.</td>
+            </tr>
+            <tr>
+                <td>90</td>
+                <td>&lt;wbr&gt;</td>
+                <td>Posición opcional de salto de línea.</td>
+                <td><code>palabra&lt;wbr&gt;larga</code></td>
+                <td>Permite cortes de línea en palabras largas.</td>
+            </tr>
+            <tr>
+                <td>91</td>
+                <td>&lt;dl&gt;</td>
+                <td>Lista de definiciones.</td>
+                <td><code>&lt;dl&gt;&lt;dt&gt;HTML&lt;/dt&gt;&lt;dd&gt;Lenguaje de marcado&lt;/dd&gt;&lt;/dl&gt;</code></td>
+                <td>Contiene términos y descripciones.</td>
+            </tr>
+            <tr>
+                <td>92</td>
+                <td>&lt;dt&gt;</td>
+                <td>Término en una lista de definiciones.</td>
+                <td><code>&lt;dt&gt;CSS&lt;/dt&gt;</code></td>
+                <td>Se usa dentro de &lt;dl&gt;.</td>
+            </tr>
+            <tr>
+                <td>93</td>
+                <td>&lt;dd&gt;</td>
+                <td>Descripción de un término.</td>
+                <td><code>&lt;dd&gt;Lenguaje de estilos&lt;/dd&gt;</code></td>
+                <td>Se usa dentro de &lt;dl&gt;.</td>
+            </tr>
+            <tr>
+                <td>94</td>
+                <td>&lt;template&gt;</td>
+                <td>Fragmento de contenido oculto.</td>
+                <td><code>&lt;template&gt;&lt;p&gt;Texto oculto&lt;/p&gt;&lt;/template&gt;</code></td>
+                <td>Se activa con JavaScript.</td>
+            </tr>
+            <tr>
+                <td>95</td>
+                <td>&lt;slot&gt;</td>
+                <td>Espacio para contenido en Web Components.</td>
+                <td><code>&lt;slot&gt;Contenido por defecto&lt;/slot&gt;</code></td>
+                <td>Se usa en componentes personalizados.</td>
+            </tr>
+            <tr>
+                <td>96</td>
+                <td>&lt;picture&gt;</td>
+                <td>Contenedor para imágenes adaptables.</td>
+                <td><code>&lt;picture&gt;&lt;source srcset="img.webp" type="image/webp"&gt;&lt;img src="img.jpg"&gt;&lt;/picture&gt;</code></td>
+                <td>Permite imágenes responsivas.</td>
+            </tr>
+            <tr>
+                <td>97</td>
+                <td>&lt;col&gt;</td>
+                <td>Define propiedades de columnas en tablas.</td>
+                <td><code>&lt;col style="background-color:yellow"&gt;</code></td>
+                <td>Se usa dentro de &lt;colgroup&gt;.</td>
+            </tr>
+            <tr>
+                <td>98</td>
+                <td>&lt;colgroup&gt;</td>
+                <td>Agrupa columnas en una tabla.</td>
+                <td><code>&lt;colgroup&gt;&lt;col span="2"&gt;&lt;/colgroup&gt;</code></td>
+                <td>Permite aplicar estilos a varias columnas.</td>
+            </tr>
+            <tr>
+                <td>99</td>
+                <td>&lt;caption&gt;</td>
+                <td>Título de una tabla.</td>
+                <td><code>&lt;table&gt;&lt;caption&gt;Horario&lt;/caption&gt;&lt;/table&gt;</code></td>
+                <td>Se muestra encima de la tabla.</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>&lt;fieldset&gt;</td>
+                <td>Agrupa elementos de formulario.</td>
+                <td><code>&lt;fieldset&gt;&lt;legend&gt;Datos&lt;/legend&gt;&lt;/fieldset&gt;</code></td>
+                <td>Organiza inputs relacionados.</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>&lt;legend&gt;</td>
+                <td>Título de un grupo de formulario.</td>
+                <td><code>&lt;legend&gt;Información personal&lt;/legend&gt;</code></td>
+                <td>Se coloca dentro de &lt;fieldset&gt;.</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>&lt;iframe&gt;</td>
+                <td>Incrusta otra página dentro del documento.</td>
+                <td><code>&lt;iframe src="https://www.example.com"&gt;&lt;/iframe&gt;</code></td>
+                <td>Se usa para mostrar contenido externo.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
