@@ -1,0 +1,176 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estructura general con Grid */
+body {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto; /* Header, categorías, menú secundario, contenido, footer */
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+/* Header con Grid */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr; /* Logo, divisas, menú superior */
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #a03;
+    color: white;
+}
+
+/* Logo */
+header .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Divisas */
+header .divisas {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Menú superior */
+.menu-superior ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+}
+
+
+/* Categorías principales */
+.categorias {
+    background-color: #f46;
+    padding: 20px;
+}
+
+.categorias ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* Menú secundario */
+.menu-secundario .ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+ul{
+    list-style: none;
+}
+.menu-secundario a {
+    text-decoration: none;
+    color: #a03;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+.manu-item .submenu{
+    display: flex;
+    flex-direction: column;
+}
+/* Submenú oculto por defecto */
+.submenu{
+    visibility: hidden;
+}
+h3{
+    text-align: center;
+}
+.columna{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    padding-left: 0;
+    margin: 0;
+}
+.columna ul{
+    border-right: 1px solid #000;
+    padding: 20px;
+}
+.columna ul:last-child{
+    border: none;
+}
+.columna ul li{
+    padding: 10px;
+}
+
+.menu-item:hover .submenu{
+    visibility: visible;
+}
+
+
+/* Contenido principal */
+section {
+    padding: 20px;
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "h2 h2 h2"
+    "img text text"
+    "img text text"
+    "img img2 img3";
+    gap: 0 10px;
+    background-color: #f462;
+}
+.img{
+    grid-area: img;
+    width: 700px;
+}
+.img2{
+    grid-area: img2;
+    width: 100%;
+}
+.img3{
+    grid-area: img3;
+    width: 100%;
+}
+section h2{
+    grid-area: h2;
+}
+.text{
+    grid-area: text;
+}
+.contacto {
+    background-color: #f4f4f4;
+    padding: 30px;
+    margin-top: 20px;
+    border-top: 2px solid #a03;
+}
+.contacto h2 {
+    color: #a03;
+    margin-bottom: 15px;
+}
+.contacto p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+/* Footer */
+footer {
+    background-color: #a03;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
