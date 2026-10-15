@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Registro de Alumnos - EduData</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado con Botón Responsive -->
+    <header class="header">
+        <div class="logo">🎓 EduData System</div>
+        <button id="toggle-btn" class="toggle-btn">☰</button>
+    </header>
+    <div class="container">
+        <!-- Menú Dinámico -->
+        <nav class="sidebar" id="sidebar">
+            <ul id="dynamic-menu" class="menu-list"></ul>
+        </nav>
+        <!-- Área de Contenido Principal -->
+        <main class="content">
+            <section id="view-panel">
+                <h2>Bienvenido al Sistema EduData</h2>
+                <p>Seleccione una opción del menú dinámico para comenzar.</p>
+            </section>
+
+            <!-- Panel de Administración del Menú -->
+            <section id="admin-section" class="card" style="margin-top: 20px;">
+                <h3>⚙️ Administrar Opciones del Menú Dinámico</h3>
+                <form id="add-menu-form">
+                    <div class="form-group">
+                        <label for="menu-id">ID Único:</label>
+                        <input type="text" id="menu-id" placeholder="Ej: m5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="menu-nombre">Nombre de la Opción:</label>
+                        <input type="text" id="menu-nombre" placeholder="Ej: Reportes" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="menu-icono">Icono (Emoji):</label>
+                        <input type="text" id="menu-icono" placeholder="Ej: 📊">
+                    </div>
+                    <div class="form-group">
+                        <label for="menu-enlace">Enlace/Sección:</label>
+                        <input type="text" id="menu-enlace" placeholder="Ej: #reportes" required>
+                    </div>
+                    <button type="submit" class="btn-primary">➕ Agregar al Menú</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

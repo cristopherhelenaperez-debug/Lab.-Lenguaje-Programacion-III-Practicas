@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.header {
+    background-color: #1e293b;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 60px);
+}
+
+/*SideBar*/
+
+.sidebar {
+    width: 260px;
+    background-color: #0f172a;
+    color: white;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-item {
+    border-bottom: 1px solid #1e293b;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.2rem;
+    color: #cbd5e1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.menu-link:hover {
+    background-color: #334155;
+    color: white;
+}
+
+/* Submenús */
+.submenu {
+    list-style: none;
+    background-color: #020617;
+    display: none;
+}
+
+.submenu.open {
+    display: block;
+}
+
+.submenu-link {
+    display: block;
+    padding: 0.6rem 2.5rem;
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.submenu-link:hover {
+    color: #38bdf8;
+}
+
+/*MAIN*/
+.content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #0001;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+    flex-direction: column;
+    }
+    .sidebar {
+    width: 100%;
+    display: none;
+    }
+    .sidebar.active {
+        display: block;
+    }
+    .toggle-btn {
+        display: block;
+    }
+}
