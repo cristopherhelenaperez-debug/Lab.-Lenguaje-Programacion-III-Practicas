@@ -1,0 +1,40 @@
+# language: es
+Característica: Navegación, Interacción con AbbaBot y Modo Oscuro en E-commerce AbbaTech
+  Como cliente de la tienda de tecnología AbbaTech
+  Quiero explorar el catálogo, interactuar con el asistente AbbaBot y cambiar el tema de la página
+  Para consultar productos, reportar averías y tener una experiencia visual cómoda
+
+  # CASO EXITOSO 1
+  Escenario: Cambiar dinámicamente entre el modo claro y modo oscuro
+    Dado que el usuario se encuentra en la página principal de AbbaTech
+    Cuando hace clic en el botón de cambio de tema "#theme-toggle"
+    Entonces el cuerpo de la página debe incluir la clase "dark-mode"
+    Y el ícono del botón debe cambiar a "☀️"
+
+  # CASO EXITOSO 2
+  Escenario: Interacción con las opciones rápidas del asistente virtual AbbaBot
+    Dado que el usuario tiene abierta la ventana del chatbot AbbaBot
+    Cuando hace clic en el botón de opción rápida "🛠️ Servicios Seguros"
+    Entonces el chat debe desplegar un mensaje que contenga "Ofrecemos computadoras, laptops, smartphones"
+    Y el mensaje debe ser enviado bajo la clase de estilo "msg-bot"
+
+  # CASO EXITOSO 3
+  Escenario: Consultar información sobre el soporte técnico escribiendo en el chat
+    Dado que el usuario tiene abierto el chatbot AbbaBot
+    Cuando escribe "contacto" en el campo de entrada "#chatbot-input"
+    Y hace clic en el botón de envío
+    Entonces AbbaBot debe responder con el texto "Puedes llenar el formulario en la página de Contacto"
+
+  # CASO DE ERROR 1
+  Escenario: Intento de envío de mensaje vacío en el chatbot AbbaBot
+    Dado que el usuario se encuentra con la ventana del chatbot abierta
+    Cuando deja el campo de texto "#chatbot-input" completamente vacío
+    Y presiona el botón de envío de formulario
+    Entonces el sistema no debe generar ningún mensaje nuevo en la lista "#chatbot-messages"
+    Y el contador de mensajes debe permanecer sin cambios
+
+  # CASO DE ERROR 2
+  Escenario: Consulta con palabras no reconocidas por el bot
+    Dado que el usuario ingresa un texto no configurado como "xyz12399" en el chat
+    Cuando envía la consulta a AbbaBot
+    Entonces el chatbot debe responder con el mensaje por defecto "Mi sistema está procesando tu consulta"
