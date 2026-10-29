@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportZone - Gestión Deportiva</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>⚽ SportZone</h1>
+        <nav>
+        <a href="#inicio" id="nav-inicio">Inicio</a>
+        <a href="#equipos" id="nav-equipos">Equipos</a>
+        <a href="#registro" id="nav-registro">Registro Atleta</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Seccion Inicio -->
+        <section id="sec-inicio" class="card">
+            <h2>Bienvenido a SportZone</h2>
+            <p>Plataforma de seguimiento y registro de torneos deportivos.</p>
+        </section>
+
+        <!-- Seccion Equipos -->
+        <section id="sec-equipos" class="card hidden">
+            <h2>Lista de Equipos en Liga</h2>
+            <ul id="lista-equipos">
+                <li>Real Madrid - Liga A</li>
+                <li>FC Barcelona - Liga A</li>
+                <li>Golden State Warriors - Baloncesto</li>
+            </ul>
+        </section>
+
+        <!-- Seccion Registro -->
+        <section id="sec-registro" class="card hidden">
+            <h2>Registro de Atleta</h2>
+            <form id="form-atleta">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" placeholder="Ej: Lionel Messi" required>
+
+                <label for="deporte">Deporte:</label>
+                <select id="deporte">
+                <option value="Fútbol">Fútbol</option>
+                <option value="Baloncesto">Baloncesto</option>
+                <option value="Béisbol">Béisbol</option>
+                </select>
+
+                <button type="submit" id="btn-guardar">Registrar Atleta</button>
+            </form>
+            <p id="msg-exito" style="color: green; display: none;">¡Atleta registrado con éxito!</p>
+        </section>
+    </div>
+
+    <script src="JS/app.JS"></script>
+</body>
+</html>

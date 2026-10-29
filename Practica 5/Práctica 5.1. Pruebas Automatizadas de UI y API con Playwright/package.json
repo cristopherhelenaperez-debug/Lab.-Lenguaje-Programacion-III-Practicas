@@ -1,0 +1,16 @@
+{
+    "name": "pruebas-deportes-playwright",
+    "version": "1.0.0",
+    "description": "Pruebas automatizadas de UI y API para App Deportiva",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx playwright test",
+        "test:ui": "npx playwright test tests/ui.spec.js",
+        "test:api": "npx playwright test tests/api.spec.js",
+        "report": "npx playwright show-report"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.40.0",
+        "http-server": "^14.1.1"
+    }
+}
