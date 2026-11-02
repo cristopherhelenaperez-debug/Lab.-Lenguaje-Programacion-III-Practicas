@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Alumnos - EduManage</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- Encabezado / Navegador -->
+    <header class="app-header">
+        <div class="header-container">
+            <h1>🎓 EduManage - Sistema de Gestión de Alumnos</h1>
+            <nav class="nav-tabs">
+                <button id="tab-btn-registro" class="tab-btn active">➕ Registrar Alumno</button>
+                <button id="tab-btn-consulta" class="tab-btn">📋 Consultar Alumnos</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-container">
+
+        <!-- PESTAÑA 1: FORMULARIO DE REGISTRO / EDICIÓN -->
+<section id="seccion-registro" class="tab-content active">
+    <div class="card-form">
+        <h2 id="form-titulo">Registrar Nuevo Alumno</h2>
+        <form id="form-alumno">
+            <!-- Campo Oculto para ID -->
+            <input type="hidden" id="alumno-id">
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="matricula">Matrícula (*)</label>
+                    <input type="text" id="matricula" placeholder="Ej: 2026-0145" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre (*)</label>
+                    <input type="text" id="nombre" placeholder="Ej: Juan" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido (*)</label>
+                    <input type="text" id="apellido" placeholder="Ej: Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de Nacimiento (*)</label>
+                    <input type="date" id="fechaNacimiento" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono (*)</label>
+                    <input type="tel" id="telefono" placeholder="Ej: 809-555-0199" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="curso">Curso / Asignatura (*)</label>
+                    <select id="curso" required>
+                        <option value="">-- Seleccionar Materia --</option>
+                        <option value="Matematicas">Matemáticas</option>
+                        <option value="Letras">Letras</option>
+                        <option value="Ciencias Sociales">Ciencias Sociales</option>
+                        <option value="Quimica">Química</option>
+                        <option value="Fisica">Física</option>
+                        <option value="Informatica">Informática</option>
+                        <option value="Idiomas">Idiomas</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="direccion">Dirección (*)</label>
+                    <input type="text" id="direccion" placeholder="Ej: Av. Universidad #123, Santo Domingo" required>
+                </div>
+            </div>
+
+            <!-- SECCIÓN DE CALIFICACIONES CON RESTRICCIONES -->
+            <div class="grades-section">
+                <h3>Registro de Calificaciones</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="parcial1">1er Parcial (Máx. 20 pts) (*)</label>
+                        <input type="number" id="parcial1" min="0" max="20" step="0.1" placeholder="0 - 20" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="parcial2">2do Parcial (Máx. 20 pts) (*)</label>
+                        <input type="number" id="parcial2" min="0" max="20" step="0.1" placeholder="0 - 20" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="examenFinal">Examen Final (Máx. 30 pts) (*)</label>
+                        <input type="number" id="examenFinal" min="0" max="30" step="0.1" placeholder="0 - 30" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asignaciones">Asignaciones (Máx. 30 pts) (*)</label>
+                        <input type="number" id="asignaciones" min="0" max="30" step="0.1" placeholder="0 - 30" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" id="btn-guardar" class="btn btn-primary">💾 Guardar Alumno</button>
+                <button type="button" id="btn-cancelar" class="btn btn-secondary hidden">✖ Cancelar Edición</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+        <!-- PESTAÑA 2: SECCIÓN DE CONSULTA DE ALUMNOS -->
+        <section id="seccion-consulta" class="tab-content">
+            <div class="card-table">
+                <div class="table-header">
+                    <h2>Listado de Alumnos Registrados</h2>
+                    <div class="search-box">
+                        <input type="text" id="input-buscar" placeholder="🔍 Buscar por Nombre, Matrícula o Curso...">
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead class="data-table">
+                            <tr>
+                                <th>Matrícula</th>
+                                <th>Nombre Completo</th>
+                                <th>Curso</th>
+                                <th>Nota Total (100)</th>
+                                <th>Estatus</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-alumnos-body">
+                            <!-- Los registros cargan dinámicamente aquí -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
