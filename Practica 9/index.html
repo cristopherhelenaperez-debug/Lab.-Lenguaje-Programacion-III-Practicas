@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Cédula Dominicana - Módulo 10</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div class="card-container">
+        <h1>🆔 Validador de Cédula</h1>
+        <p class="subtitle">Sistema de verificación oficial</p>
+
+        <div class="form-group">
+            <label for="input-cedula">Ingrese el número de cédula:</label>
+            <input type="text" id="input-cedula" placeholder="Ej: 001-1645428-1" maxlength="13">
+        </div>
+
+        <button id="btn-validar" class="btn-primary">Verificar Cédula</button>
+
+        <!-- Contenedor del Resultado -->
+        <div id="resultado-container" class="resultado hidden">
+            <span id="resultado-icono"></span>
+            <p id="resultado-texto"></p>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
