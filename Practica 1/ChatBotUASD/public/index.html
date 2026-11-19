@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Inteligente - Estatuto Orgánico UASD</title>
+    <link rel="stylesheet" href="CSS/chat.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- PANEL LATERAL: PREGUNTAS SUGERIDAS -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>📚 Consultas Sugeridas</h2>
+                <p>Haz clic en cualquier pregunta para iniciar:</p>
+            </div>
+            <div class="suggestions-list" id="suggestions-list">
+                <!-- Las preguntas sugeridas se inyectarán aquí o se listarán estáticamente -->
+                <button class="suggestion-btn">¿Qué es la Universidad Autónoma de Santo Domingo?</button>
+                <button class="suggestion-btn">¿Cuál es la misión de la UASD?</button>
+                <button class="suggestion-btn">¿Cuáles son los fines de la Universidad?</button>
+                <button class="suggestion-btn">¿Qué establece el Estatuto sobre la autonomía universitaria?</button>
+                <button class="suggestion-btn">¿Qué es el Claustro Mayor?</button>
+                <button class="suggestion-btn">¿Qué es el Consejo Universitario?</button>
+                <button class="suggestion-btn">¿Cuáles son las funciones del Rector?</button>
+                <button class="suggestion-btn">¿Qué establece el Estatuto sobre los estudiantes?</button>
+                <button class="suggestion-btn">¿Cuáles son los derechos de los estudiantes?</button>
+                <button class="suggestion-btn">¿Qué establece el Estatuto sobre la investigación?</button>
+            </div>
+        </aside>
+
+        <!-- SECCIÓN PRINCIPAL DEL CHAT -->
+        <main class="chat-main">
+            <header class="chat-header">
+                <div class="bot-info">
+                    <span class="status-dot"></span>
+                    <div>
+                        <h1>Asistente Estatuto UASD</h1>
+                        <p>Inteligencia Artificial Institucional</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Historial de Conversación -->
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        ¡Hola! Soy tu asistente virtual experto en el <strong>Estatuto Orgánico de la UASD</strong>. Puedes escribirme una pregunta libremente o seleccionar una de las consultas sugeridas en el panel lateral. ¿En qué te puedo ayudar hoy?
+                    </div>
+                </div>
+            </div>
+
+            <!-- Barra de Entrada de Texto -->
+            <form class="chat-input-form" id="chat-form">
+                <input type="text" id="user-input" placeholder="Escribe tu consulta sobre el Estatuto de la UASD..." autocomplete="off" required>
+                <button type="submit" id="send-btn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </form>
+        </main>
+    </div>
+
+    <script src="JS/chat.js"></script>
+</body>
+</html>
