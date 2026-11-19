@@ -1,90 +1,249 @@
+/* Variables de Tema (Modo Nocturno por defecto + Modo Claro) */
+:root {
+    --bg-primary: #070d19;
+    --bg-secondary: #0f1c33;
+    --bg-card: linear-gradient(160deg, rgba(17, 30, 56, 0.95) 0%, rgba(12, 22, 44, 0.98) 100%);
+    --bg-card-featured: linear-gradient(160deg, rgba(29, 78, 216, 0.25) 0%, rgba(15, 28, 51, 0.98) 100%);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --border-color: rgba(148, 163, 184, 0.16);
+    --shadow-card: 0 12px 28px rgba(0, 0, 0, 0.45);
+    --shadow-hover: 0 18px 36px rgba(59, 130, 246, 0.22);
+    --tag-bg: rgba(59, 130, 246, 0.15);
+    --tag-color: #60a5fa;
+    --glow-1: rgba(59, 130, 246, 0.16);
+    --glow-2: rgba(99, 102, 241, 0.12);
+}
+
+body.light-mode {
+    --bg-primary: #f1f5f9;
+    --bg-secondary: #ffffff;
+    --bg-card: linear-gradient(160deg, #ffffff 0%, #f8fafc 100%);
+    --bg-card-featured: linear-gradient(160deg, #eff6ff 0%, #ffffff 100%);
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --accent: #1d4ed8;
+    --accent-hover: #1e40af;
+    --border-color: rgba(15, 23, 42, 0.1);
+    --shadow-card: 0 10px 24px rgba(15, 23, 42, 0.07);
+    --shadow-hover: 0 16px 32px rgba(29, 78, 216, 0.15);
+    --tag-bg: rgba(29, 78, 216, 0.1);
+    --tag-color: #1d4ed8;
+    --glow-1: rgba(29, 78, 216, 0.08);
+    --glow-2: rgba(14, 165, 233, 0.08);
+}
+
 /* Reset básico */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: center/ cover no-repeat fixed #111;
-    color: #fff;
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: var(--bg-primary);
+    background-image:
+        radial-gradient(circle at 15% 10%, var(--glow-1), transparent 40%),
+        radial-gradient(circle at 85% 20%, var(--glow-2), transparent 40%);
+    color: var(--text-primary);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    transition: background-color 0.35s ease, color 0.35s ease;
+    line-height: 1.5;
 }
 
 /* Header */
-header {
-    text-align: center;
-    padding: 30px;
-    background-color: #1066; /* tono más claro dentro del azul */
+.site-header {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    padding: 28px 24px;
+    backdrop-filter: blur(12px);
+    transition: background-color 0.35s ease, border-color 0.35s ease;
 }
 
-header h1 {
-    font-size: 2.5rem;
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--tag-color);
+    background-color: var(--tag-bg);
+    padding: 5px 12px;
+    border-radius: 999px;
     margin-bottom: 10px;
 }
 
+header h1 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+}
+
 header p {
-    font-size: 1.2rem;
-    color: #ccc;
+    font-size: 1.02rem;
+    color: var(--text-secondary);
+}
+
+/* Botón Modo Nocturno / Claro */
+.theme-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.theme-btn:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
 }
 
 /* Grid de prácticas */
 .grid-practicas {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 20px;
-    padding: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 40px 24px;
 }
 
 /* Tarjetas */
 .card {
-    background-color: #138a;
-    background: linear-gradient(#000 0%, #138); /* azul intermedio */
-    border-radius: 10px;
-    padding: 20px;
-    padding-top: 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 26px 22px;
     text-align: center;
-    transition: transform 0.3s ease;
-    box-shadow: 0 0 20px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow-card);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card.featured {
+    background: var(--bg-card-featured);
+    border-color: rgba(59, 130, 246, 0.45);
+}
+
+.card-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--tag-color);
+    background-color: var(--tag-bg);
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
 }
 
 .card h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
     margin-bottom: 10px;
-    color: #f0f0f0;
+    color: var(--text-primary);
 }
 
 .card p {
-    margin-bottom: 15px;
-    color: #ccc;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    max-width: 32ch;
 }
 
 .card a {
     display: inline-block;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    background-color: #002; /* color de acento */
-    color: #fff;
-    transition: transform 0.3s ease;
+    padding: 9px 18px;
+    margin-top: 2px;
+    margin-bottom: 14px;
+    background-color: var(--accent);
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card a:last-child {
+    margin-bottom: 0;
 }
 
 /* Efecto hover */
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--accent);
 }
-.card a:hover{
-    transform: scale(1.10);
+
+.card a:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #027a;
+    padding: 22px 16px;
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.92rem;
     margin-top: auto;
+    transition: background-color 0.35s ease, border-color 0.35s ease;
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+    .grid-practicas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .grid-practicas {
+        grid-template-columns: 1fr;
+        padding: 24px 16px;
+        gap: 18px;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
