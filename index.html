@@ -6,50 +6,69 @@
     <title>Prácticas Lab. Programación III</title>
     <link rel="stylesheet" href="labIII.css">
 </head>
-<body>
-    <header>
-        <h1>Prácticas de Laboratorio de Programacion III</h1>
-        <p>Listado de todas las prácticas realizadas</p>
+<body class="dark-mode">
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-text">
+                <span class="badge">UASD • Lab. Programación III</span>
+                <h1>Prácticas de Laboratorio de Programación III</h1>
+                <p>Listado de todas las prácticas y proyecto final realizados</p>
+            </div>
+            <button id="theme-toggle" class="theme-btn" type="button" aria-label="Cambiar modo de color">
+                <span id="theme-icon">☀️</span>
+                <span id="theme-label">Modo Claro</span>
+            </button>
+        </div>
     </header>
 
     <!-- Contenedor principal de tarjetas -->
-    <main>
+    <main class="container">
         <section class="grid-practicas">
-            <div class="card">
+            <article class="card">
+                <span class="card-tag">Práctica 01</span>
                 <h2>Práctica 1</h2>
                 <p>Diseñar una Página Web Personal</p>
                 <a href="Practica 1/index.html" target="_blank">Ver práctica</a>
-            </div>
-            <div class="card">
+            </article>
+
+            <article class="card">
+                <span class="card-tag">Práctica 02</span>
                 <h2>Práctica 2</h2>
                 <p>Crear página HTML / Plain con su Biografía y Horario de Clases</p>
                 <a href="Practica 2/index.html" target="_blank">Ver práctica</a>
                 <p>Mostrar 102 Etiquetas HTML</p>
                 <a href="Practica 2/Listado.html" target="_blank">Ver práctica</a>
-            </div>
-            <div class="card">
+            </article>
+
+            <article class="card">
+                <span class="card-tag">Práctica 03</span>
                 <h2>Práctica 3</h2>
                 <p>Página Web Banco Anthem</p>
                 <a href="Practica 3/index.html" target="_blank">Ver práctica</a>
-            </div>
-            <div class="card">
+            </article>
+
+            <article class="card">
+                <span class="card-tag">Práctica 04</span>
                 <h2>Práctica 4</h2>
                 <p>Menú dinámico utilizando una estructura de datos</p>
                 <a href="Practica 4/index.html" target="_blank">Ver práctica</a>
-            </div>
-            <div class="card">
+            </article>
+
+            <article class="card">
+                <span class="card-tag">Práctica 05</span>
                 <h2>Práctica 5</h2>
                 <p>Práctica 5.1. Pruebas Automatizadas de UI y API con Playwright o Cypress</p>
                 <a href="Practica 5/Práctica 5.1. Pruebas Automatizadas de UI y API con Playwright/README.md" target="_blank">Ver práctica</a>
-                
+
                 <p>5.2. Pruebas BDD con Gherkin</p>
                 <a href="Practica 5/Práctica 5.2. Pruebas BDD con Gherkin/index.html" target="_blank">Ver práctica</a>
-                
+
                 <p>Práctica 5.3. Pruebas de Performance con JMeter, k6 o PostmanTarea</p>
                 <a href="Practica 5/Práctica 5.3. Pruebas de Performance con k6/README.md" target="_blank">Ver práctica</a>
-           
-            </div>
-            <div class="card">
+            </article>
+
+            <article class="card">
+                <span class="card-tag">Práctica 06</span>
                 <h2>Práctica 6</h2>
                 <p>XML</p>
                 <a href="Practica 6/XML/Resumen XML.pdf" target="_blank">Ver práctica</a>
@@ -59,38 +78,86 @@
 
                 <p>AJAX</p>
                 <a href="Practica 6/AJAX/Resumen AJAX.pdf" target="_blank">Ver práctica</a>
-            </div>
-            <div class="card">
+            </article>
+
+            <article class="card">
+                <span class="card-tag">Práctica 07</span>
                 <h2>Práctica 7</h2>
                 <p>Formulario con Acceso a BD</p>
                 <a href="Practica 7/index.html" target="_blank">Ver práctica</a>
-            </div>
-            <div class="card">
+            </article>
+
+            <article class="card">
+                <span class="card-tag">Práctica 08</span>
                 <h2>Práctica 8</h2>
                 <p>Modelo Vista Controlador (MVC)</p>
                 <a href="Practica 8/MVC origen evolución y uso actual en aplicaciones web.pdf" target="_blank">Ver práctica</a>
-            </div>
-            <div class="card">
+            </article>
+
+            <article class="card">
+                <span class="card-tag">Práctica 09</span>
                 <h2>Práctica 9</h2>
-                <p>Validar cédula de identidad dominicada</p>
+                <p>Validar cédula de identidad dominicana</p>
                 <a href="Practica 9/index.html" target="_blank">Ver práctica</a>
-            </div>
-            <div class="card">
+            </article>
+
+            <article class="card">
+                <span class="card-tag">Práctica 10</span>
                 <h2>Práctica 10</h2>
                 <p>Spring Framework</p>
                 <a href="Practica 10/Spring Framework.pdf" target="_blank">Ver práctica</a>
-            </div>
-            <div class="card">
+            </article>
+
+            <article class="card featured">
+                <span class="card-tag">Proyecto Final</span>
                 <h2>Proyecto Final</h2>
                 <p>ChatBot Estatuto UASD</p>
                 <a href="ChatBotUASD/public/index.html" target="_blank">Ver práctica</a>
-            </div>
-            <!-- Puedes seguir agregando más tarjetas según tus prácticas -->
+            </article>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Cristopher Helena Perez 100658882 - Todas las prácticas de HTML</p>
     </footer>
+
+    <script>
+        const toggleBtn = document.getElementById("theme-toggle");
+        const themeIcon = document.getElementById("theme-icon");
+        const themeLabel = document.getElementById("theme-label");
+        const body = document.body;
+
+        // Cargar preferencia guardada (por defecto modo nocturno)
+        const savedTheme = localStorage.getItem("lab3-theme");
+        if (savedTheme === "light") {
+            applyLightMode();
+        } else {
+            applyDarkMode();
+        }
+
+        function applyDarkMode() {
+            body.classList.remove("light-mode");
+            body.classList.add("dark-mode");
+            themeIcon.textContent = "☀️";
+            themeLabel.textContent = "Modo Claro";
+            localStorage.setItem("lab3-theme", "dark");
+        }
+
+        function applyLightMode() {
+            body.classList.remove("dark-mode");
+            body.classList.add("light-mode");
+            themeIcon.textContent = "🌙";
+            themeLabel.textContent = "Modo Nocturno";
+            localStorage.setItem("lab3-theme", "light");
+        }
+
+        toggleBtn.addEventListener("click", () => {
+            if (body.classList.contains("dark-mode")) {
+                applyLightMode();
+            } else {
+                applyDarkMode();
+            }
+        });
+    </script>
 </body>
 </html>
